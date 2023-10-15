@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --clr-dark-magenta:  hsl(300, 43%, 22%);
+    --clr-soft-pink: hsl(333, 80%, 67%);
+    
+   
+    --clr-neutral-grayish-magenta: hsl(303, 10%, 53%);
+    --clr-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --fs-body: 0.9375rem;
+
+    --ff: 'League Spartan', sans-serif;
+
+    --fw-league-spartan: 400;
+    --fw-league-spartan: 500;
+    --fw-league-spartan: 700;
+       
+}
