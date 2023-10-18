@@ -34,6 +34,8 @@ img {
     --fw-l00: 400;
     --fw-200: 500;
     --fw-300: 700;
+
+    --br: .5rem;
 }
 
 body {
@@ -68,8 +70,51 @@ h1 {
   color: var(--clr-primary-700);
   background: var(--clr-neutral-200);
   font-weight: 800;
+  padding: .5rem;
+  border-radius: var(--br);
+
+  /*&::before {
+    content: '';
+    width: 30%;
+    height: 1rem;
+    margin: 0 auto;
+    background-color: yellow;
+    background-image: url('images/star.svg');
+    margin-bottom: .5rem;
+    background-repeat: round;
+  }*/
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
 }
 
 .flow-content > * + * {
   margin-top: var(--flow-space, 1rem);
+}
+
+.quotes blockquote {
+  --spacer: .75rem;
+  background: var(--clr-primary-700);
+  color: var(--clr-neutral-200);
+  text-align: left;
+  border-left: 3px solid var(--clr-primary-300);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--br);
+  padding: 2rem;
+}
+
+img {
+  border-radius: 50%;
+  margin-right: var(--spacer);
+}
+
+.split {
+  display: flex;
+}
+
+. a-center {
+  align-items: center;
 }
