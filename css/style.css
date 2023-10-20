@@ -43,6 +43,9 @@ body {
     font-size: var(--fs-400);
     padding-top: 5rem;
     text-align: center;
+    background-image: url('../images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');  
+    background-repeat: no-repeat;
+    background-position: top -50vh left -50vh, bottom -50vh right -50vh;
 }
 
 .container {
@@ -80,7 +83,7 @@ main {
   
     main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: 2em;
     }
     .intro {
@@ -89,10 +92,19 @@ main {
     
     .ratings {
       grid-column: 2 / 3;
+      align-self: center;
     }
     
     .quotes {
       grid-column: 1 / -1;
+    }
+
+    .ratings:first-of-type {
+      margin-left: 0;
+    }
+
+    .ratings:last-of-type {
+      margin-right: 0;
     }
 }
 
@@ -172,12 +184,18 @@ img {
     flex-direction: row;
     gap: 1em;
   }
+
+  li:nth-child(2) {
+    transform: translateY(3rem);
+  } 
+
+  li:nth-child(3) {
+    transform: translateY(6rem);
+  } 
+
 }
 
 . a-center {
   align-items: center;
 }
 
-.irene {
-  margin-top: .5rem;
-}
