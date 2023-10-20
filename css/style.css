@@ -65,8 +65,7 @@ h1 {
       margin-left: auto;
       margin-right: auto;
     }
-    
-    }
+}
 
 .lead {
     font-size: var(--fs-500);
@@ -177,4 +176,8 @@ img {
 
 . a-center {
   align-items: center;
+}
+
+.irene {
+  margin-top: .5rem;
 }
