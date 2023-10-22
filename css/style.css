@@ -43,7 +43,7 @@ body {
     font-size: var(--fs-400);
     padding-top: 5rem;
     text-align: center;
-    background-image: url('../images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');  
+    background-image: url('./images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom.svg');  
     background-repeat: no-repeat;
     background-position: top -50vh left -50vh, bottom -50vh right -50vh;
 }
